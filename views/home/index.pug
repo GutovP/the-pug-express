@@ -1,0 +1,8 @@
+extends ../_layout
+
+block container
+  ul
+    each book in model
+      li.book-item
+        a.btn(href="/books/" + book.id)
+           =book.title

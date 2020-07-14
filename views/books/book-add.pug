@@ -1,0 +1,16 @@
+extends ../_layout
+
+block container
+     h2 Add book
+     form(action="/books" method="POST")
+        .row    
+            .col-xs-12
+                label
+                    | Enter book title 
+                    br
+                    // name should be the same as in the post request
+                    input(name="title")
+        .row    
+            .col-xs-12            
+                button.btn.btn-success 
+                    | Save    
